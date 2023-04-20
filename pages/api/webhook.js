@@ -1,12 +1,13 @@
-import {mongooseConnect} from "@/lib/mongoose";
+
 const stripe = require('stripe')(process.env.STRIPE_SK);
 import {buffer} from 'micro';
 import {Order} from "@/models/Order";
+import mongooseConfig from "../lib/mongoose";
 
 const endpointSecret = "whsec_5ac64107c4056f9c432c216f8f10d075a29078ef826571fc0cc1958b9cdcdee0";
 
 export default async function handler(req,res) {
-  await mongooseConnect();
+  await mongooseConfig();
   const sig = req.headers['stripe-signature'];
 
   let event;
@@ -37,8 +38,11 @@ export default async function handler(req,res) {
   res.status(200).send('ok');
 }
 
+//to prevent nextjs auto parse issue
 export const config = {
   api: {
     bodyParser:false,
 }
 };
+
+//acct_1MybHFFrdgzhvLwK

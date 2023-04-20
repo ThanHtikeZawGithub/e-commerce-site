@@ -37,7 +37,7 @@ export default async function handle(req, res) {
         quantity,
         price_data: {
           currency: "USD",
-          product_data: { name: productInfo.title },
+          product_data: { name: productInfo.name },
           unit_amount: quantity * productInfo.price * 100,
         },
       });

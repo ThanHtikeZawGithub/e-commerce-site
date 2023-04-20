@@ -10,8 +10,11 @@ import Input from "./components/Input";
 
 const ColumnsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 1fr;
   gap: 40px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1.2fr .8fr;
+  }
 `;
 
 const Box = styled.div`
