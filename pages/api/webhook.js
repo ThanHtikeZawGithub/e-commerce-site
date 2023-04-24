@@ -4,7 +4,7 @@ import {buffer} from 'micro';
 import {Order} from "@/models/Order";
 import mongooseConfig from "../lib/mongoose";
 
-const endpointSecret = "whsec_5ac64107c4056f9c432c216f8f10d075a29078ef826571fc0cc1958b9cdcdee0";
+const endpointSecret = process.env.STRIPE_ENDPOINT_SK;
 
 export default async function handler(req,res) {
   await mongooseConfig();
