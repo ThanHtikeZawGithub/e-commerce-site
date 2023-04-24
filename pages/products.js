@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from './components/Header'
-import mongooseConfig from './lib/mongoose'
+import Header from '../components/Header'
+import mongooseConfig from '../lib/mongoose'
 import styled from 'styled-components'
-import { Product } from './models/Product'
-import Center from './components/Center'
-import ProductsGrid from './components/ProductGrid'
+import { Product } from '../models/Product'
+import Center from '../components/Center'
+import ProductsGrid from '../components/ProductGrid'
 
 
 const Title = styled.h1`

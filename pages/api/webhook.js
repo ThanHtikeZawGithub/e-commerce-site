@@ -1,8 +1,8 @@
 
 const stripe = require('stripe')(process.env.STRIPE_SK);
 import {buffer} from 'micro';
-import mongooseConfig from "../lib/mongoose";
-import { Order } from '../models/Order';
+import mongooseConfig from "../../lib/mongoose";
+import { Order } from '../../models/Order';
 
 const endpointSecret = process.env.STRIPE_ENDPOINT_SK;
 

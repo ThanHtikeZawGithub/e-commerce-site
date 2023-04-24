@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from './components/Header'
-import Featured from './components/Featured'
-import mongooseConfig from './lib/mongoose'
-import { Product } from './models/Product'
-import NewProducts from './components/NewProducts'
+import Header from '../components/Header'
+import Featured from '../components/Featured'
+import mongooseConfig from '../lib/mongoose'
+import { Product } from '../models/Product'
+import NewProducts from '../components/NewProducts'
 
 const HomePage = ({featuredProduct, newProducts}) => {
   return (

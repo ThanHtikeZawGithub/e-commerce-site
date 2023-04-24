@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import Center from '../components/Center'
-import Header from '../components/Header';
-import mongooseConfig from '../lib/mongoose';
-import { Product } from '../models/Product';
+import Center from '../../components/Center'
+import Header from '../../components/Header';
+import mongooseConfig from '../../lib/mongoose';
+import { Product } from '../../models/Product';
 import styled from 'styled-components';
-import ProductImages from '../components/ProductImages';
-import { CartContext } from '../components/CartContext';
-import Button from '../components/Button';
-import { CartIcon } from '../components/Icons';
+import ProductImages from '../../components/ProductImages';
+import { CartContext } from '../../components/CartContext';
+import Button from '../../components/Button';
+import { CartIcon } from '../../components/Icons';
 
 const Title = styled.h1`
   font-size: 1.5em;
