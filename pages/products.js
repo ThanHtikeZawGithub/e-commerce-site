@@ -23,7 +23,9 @@ const ProductsPage = ({products}) => {
   )
 }
 
-export default ProductsPage
+export default ProductsPage;
+
+
 
 export async function getServerSideProps() {
     await mongooseConfig();

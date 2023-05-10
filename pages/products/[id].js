@@ -79,4 +79,4 @@ export async function getServerSideProps(context) {
             product: JSON.parse(JSON.stringify(product)),
         }
     }
-}
+};

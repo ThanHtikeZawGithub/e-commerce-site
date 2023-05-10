@@ -15,4 +15,4 @@ const Center = ({children}) => {
   )
 }
 
-export default Center
+export default Center;
