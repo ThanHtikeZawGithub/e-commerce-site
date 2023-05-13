@@ -93,7 +93,7 @@ const Featured = ({ product }) => {
           </Column>
           <Column>
             <img
-              src="https://storage.googleapis.com/e-commerce-2cf40.appspot.com/1681840590318.png?GoogleAccessId=firebase-adminsdk-4h1na%40e-commerce-2cf40.iam.gserviceaccount.com&Expires=4102421400&Signature=kdUdGHiqS7l7exJv%2BoJawohbm6cBroWoRWzjygpyU%2F5%2FnoEHSTA8VS9UjVVhjy%2FFWn1BBN1ESXrKmHj7G75%2BKQQDonFNw0DYxzbxOF4wYQwZoPOowBJ5qBKsQ03bG2nJePSfDvLHDDjFPGu8Bbz7jMTcAoBD6agX2nmWfiyNCBR3oNewJh9w3v1vebE4YNkY%2FGGidBCCxwek6bgwEf1C%2B0z6HQfoVTWH7wcQDlh0pjZntBXAWgz%2BZ9c8%2F7EYsV6j4OqQqTra7pI%2FB7rVEl2iv2opDzLUmWJrETybr4XyoxydHAsVbyL9mLEVj3BZeU2pWvh8BTYgh5oCLC5z4rMVjA%3D%3D"
+              src="https://storage.googleapis.com/e-commerce-2cf40.appspot.com/1683733021164.png?GoogleAccessId=firebase-adminsdk-4h1na%40e-commerce-2cf40.iam.gserviceaccount.com&Expires=4102421400&Signature=KLe%2FY3Ox%2F2j4RvyAQ3iLslXRdmh8MN%2BFdsfQrahm%2BrUaugnUomorGYtJQoFrNVI4xDB8bOSfE52GfwrzgkH90NAYTtdKk8TjFntue%2BWB4wnjZEoYsBcehSQaEhNO7sDcCEYF%2F1N9MO3vbKEy3dexVS5QHfACEXJpcl8lJLbHlgag2njvMur8%2FW4t4UXVnryBe3lMk3Pjuhf%2FnbcpUSiFzk4UvuFmEgsuWw%2Bnf34Z4jYFSbB3kYTOdaE%2F%2BaTwALNE7s49uhxLaOckcrpaNc9zc6ee%2F2T7Fw4EPdsYXXq1R3y%2Bsd1qcE27QNvisRD35Ui1Yu6feNoIlzeixb62EG8QmQ%3D%3D"
               alt="macbook"
             />
           </Column>

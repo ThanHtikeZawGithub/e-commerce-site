@@ -8,6 +8,7 @@ import ProductImages from '../../components/ProductImages';
 import { CartContext } from '../../components/CartContext';
 import Button from '../../components/Button';
 import { CartIcon } from '../../components/Icons';
+import ReactStars from "react-rating-stars-component";
 
 const Title = styled.h1`
   font-size: 1.5em;
@@ -37,6 +38,7 @@ const Box = styled.div`
   padding: 30px;
 `;
 
+
 const ProductPage = ({product}) => {
   const {addProduct} = useContext(CartContext);
   return (
@@ -52,7 +54,7 @@ const ProductPage = ({product}) => {
             <p>{product.description}</p>
             <PriceRow>
               <div>
-                <Price>${product.price}</Price>
+                <Price>Ks {product.price}</Price>
               </div>
               <div>
                 <Button primary onClick={() => addProduct(product._id)}>
@@ -62,6 +64,7 @@ const ProductPage = ({product}) => {
             </PriceRow>
           </div>
         </ColWrapper>
+      
       </Center>
     </>
   );

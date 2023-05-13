@@ -4,6 +4,7 @@ import Featured from '../components/Featured'
 import mongooseConfig from '../lib/mongoose'
 import { Product } from '../models/Product'
 import NewProducts from '../components/NewProducts'
+import CompanyCard from '@/components/CompanyCard'
 
 const HomePage = ({featuredProduct, newProducts}) => {
   return (
@@ -11,6 +12,7 @@ const HomePage = ({featuredProduct, newProducts}) => {
       <Header/>
       <Featured product={featuredProduct}/>
       <NewProducts products={newProducts}/>
+      <CompanyCard/>
       </div>
   )
 }
@@ -18,10 +20,10 @@ const HomePage = ({featuredProduct, newProducts}) => {
 export default HomePage;
 
 export async function getServerSideProps() {
-  const featuredProductId = '643ee5113bb1a94d7ad2218d';
+  const featuredProductId = '645bba47ebbfa61d7318dfb8';
   await mongooseConfig();
   const featuredProduct = await Product.findById(featuredProductId);
-  const newProducts = await Product.find({}, null, {sort: {'_id':-1}, limit:10});
+  const newProducts = await Product.find({}, null, {sort: {'_id':-1}, limit:5});
   return {
     props: {
       featuredProduct: JSON.parse(JSON.stringify(featuredProduct)),

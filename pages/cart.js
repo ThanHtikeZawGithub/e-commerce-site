@@ -176,7 +176,7 @@ const CartPage = () => {
                           onClick={() => moreOfThisProduct(product._id)}>+</Button>
                         </td>
                         <td>
-                            ${product.price * cartProducts.filter((id) => id === product._id).length}
+                            Ks {product.price * cartProducts.filter((id) => id === product._id).length}
                         </td>
                         
                       </tr>
@@ -184,7 +184,7 @@ const CartPage = () => {
                      <tr>
                     <td></td>
                     <td>Total Ammount</td>
-                    <td>${total}</td>
+                    <td>Ks {total}</td>
                   </tr>
                 </tbody>
               </Table>
